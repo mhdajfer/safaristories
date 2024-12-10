@@ -1,5 +1,5 @@
-'use client';
-import { Mail, Phone, MapPin } from 'lucide-react';
+"use client";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -15,11 +15,13 @@ export function Contact() {
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-amber-600" />
-              <span>+1 (234) 567-8900</span>
+              <span>+91-9020587172</span>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-amber-600" />
-              <span>123 Safari Street, Adventure City</span>
+              <span>
+                Thathapilly, Mannam P.O, North Paravur, Ernakulam, Kerala
+              </span>
             </div>
           </div>
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
