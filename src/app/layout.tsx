@@ -1,12 +1,14 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Safari Stories - African Adventures',
-  description: 'Experience the untamed beauty of African safaris through our curated adventures',
+  title: "Travel Tales - Your Journey Begins Here",
+  description:
+    "Experience the untamed beauty of Indian destinations through our curated adventures",
 };
 
 export default function RootLayout({
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
