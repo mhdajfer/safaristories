@@ -20,9 +20,9 @@ export function Contact() {
     try {
       await emailjs.send(
         "service_oci2x5l", // Replace with your EmailJS service ID
-        "template_ut5y5if", // Replace with your EmailJS template ID
+        "template_6o8w78e", // Replace with your EmailJS template ID
         {
-          to_email: "ajferaju9961@gmail.com",
+          to_email: "justinjose5134@gmail.com",
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
