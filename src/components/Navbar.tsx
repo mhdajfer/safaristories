@@ -1,16 +1,16 @@
-'use client';
-import { useState } from 'react';
-import { Compass, Menu, X } from 'lucide-react';
-import Link from 'next/link';
+"use client";
+import { useState } from "react";
+import { Compass, Menu, X } from "lucide-react";
+import Link from "next/link";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: '#destinations', label: 'Destinations' },
-    { href: '#experiences', label: 'Experiences' },
-    { href: '#about', label: 'About' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#destinations", label: "Destinations" },
+    { href: "#experiences", label: "Experiences" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -18,8 +18,10 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
-            <Compass className="h-8 w-8 text-teal-600" />
-            <span className="text-xl font-semibold text-teal-900">Travel Tales</span>
+            <Compass className="h-8 w-8 text-teal-800" />
+            <span className="text-xl font-semibold text-teal-900">
+              Safari Stories
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -44,11 +46,7 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 

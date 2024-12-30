@@ -60,15 +60,16 @@ export function Contact() {
             <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
             <div className="flex items-center gap-4">
               <Mail className="text-teal-600" />
-              <span>info@traveltales.com</span>
+              <span>safaristories@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-teal-600" />
-              <span>+1 (234) 567-8900</span>
+              <span>+91-9020587172</span>
             </div>
             <div className="flex items-center gap-4">
               <MapPin className="text-teal-600" />
-              <span>123 Travel Street, Adventure City</span>
+              <span>Thathapilly, Mannam P.O</span>
+              <span>North Paravur, Ernakulam - 683520</span>
             </div>
           </div>
           <form className="space-y-4" onSubmit={handleSubmit}>
